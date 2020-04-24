@@ -3,5 +3,6 @@
         <file>main.qml</file>
         <file>qtquickcontrols2.conf</file>
         <file>icons/icon.png</file>
+        <file>ContactItem.qml</file>
     </qresource>
 </RCC>
