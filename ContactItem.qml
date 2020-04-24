@@ -22,8 +22,6 @@ Rectangle {
         return "white";
     }
 
-
-
     RowLayout{
         anchors.fill: parent
         spacing: 7

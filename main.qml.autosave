@@ -25,7 +25,7 @@ Window {
         MainToolBar{
              Layout.fillWidth: true
              onNewItem: {
-                 contactsModel.append({name: name});
+                 contactsModel.append({name: text});
              }
         }
         ContactList{
