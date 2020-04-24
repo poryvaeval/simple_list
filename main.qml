@@ -12,13 +12,24 @@ Window {
         ListElement{
             name: "Vasiliu"
         }
+        ListElement{
+            name: "Vasilriu"
+        }
+        ListElement{
+            name: "Vasilriu"
+        }
     }
 
-   ListView{
+    ListView{
+        id:list
        anchors.fill: parent
        model: contactsModel
        delegate: ContactItem{
            text: name
+           selected: list.currentIndex === index
+           onLeftClick: {
+               list.currentIndex = index
+           }
        }
    }
 }
