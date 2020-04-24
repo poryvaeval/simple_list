@@ -7,7 +7,18 @@ Window {
     width: 320
     height: 480
     title: qsTr("Контакты")
-    Button{
-        text: "test"
+    ListModel{
+        id: contactsModel
+        ListElement{
+            name: "Vasiliu"
+        }
     }
+
+   ListView{
+       anchors.fill: parent
+       model: contactsModel
+       delegate: ContactItem{
+           text: name
+       }
+   }
 }
