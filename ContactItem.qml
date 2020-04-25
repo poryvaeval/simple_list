@@ -29,7 +29,7 @@ Rectangle {
         anchors.rightMargin: 4
         Image{
             id: icon
-            source: "icons/icon.png"
+            source: "icons/icon1.png"
             Layout.fillHeight: true
             Layout.preferredWidth: height
             Layout.margins: 7

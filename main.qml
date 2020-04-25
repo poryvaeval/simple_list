@@ -11,13 +11,12 @@ Window {
     ListModel{
         id: contactsModel
         ListElement{
-            name: "Vasiliu"
+            name: "Анна"
+            avatar: "icons/icon1.png"
         }
         ListElement{
-            name: "Vasilriu"
-        }
-        ListElement{
-            name: "Vasilriu"
+            name: "Анна"
+            avatar: "icons/icon2.png"
         }
     }
     ColumnLayout{
@@ -25,7 +24,7 @@ Window {
         MainToolBar{
              Layout.fillWidth: true
              onNewItem: {
-                 contactsModel.append({name: name});
+                 contactsModel.append({name: text});
              }
         }
         ContactList{
