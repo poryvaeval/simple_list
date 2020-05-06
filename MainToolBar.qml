@@ -16,9 +16,9 @@ RowLayout {
         newItem(textField.text);
         textField.clear();
     }
-
     Button{
         text: "Добавить"
+
         highlighted: true
         onClicked: {
             add();

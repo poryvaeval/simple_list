@@ -4,6 +4,7 @@ import QtQuick.Controls 2.13
 import QtQuick.Layouts 1.13
 
 Window {
+    color: "lightgreen"
     visible: true
     width: 320
     height: 480
@@ -12,11 +13,9 @@ Window {
         id: contactsModel
         ListElement{
             name: "Анна"
-            avatar: "icons/icon1.png"
         }
         ListElement{
-            name: "Анна"
-            avatar: "icons/icon2.png"
+            name: "Антон"
         }
     }
     ColumnLayout{

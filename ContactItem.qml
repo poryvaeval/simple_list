@@ -7,13 +7,10 @@ Rectangle {
     property alias icon: icon.source
     property alias text: label.text
     property bool selected: false
-
     signal leftClick()
     signal rightClick()
-
     width: parent.width
     height: 60
-
     color: {
         if (selected)
             return "#4fc1e9"
@@ -23,6 +20,7 @@ Rectangle {
     }
 
     RowLayout{
+
         anchors.fill: parent
         spacing: 7
         anchors.leftMargin: 4
